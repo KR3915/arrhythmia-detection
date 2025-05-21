@@ -12,4 +12,10 @@ Xtrain = X(training(cv), :);
 Ytrain = Y(training(cv));
 Xtest  = X(test(cv), :);
 Ytest  = Y(test(cv));
-
+hold off
+model = fitcsvm(Xtrain, Ytrain);
+Ypred = predict(model, Xtest);
+accuracy = mean(Ypred == Ytest) * 100;
+fprintf('Testovací přesnost: %.2f %%\n', accuracy);
+confusionchart(Ytest, Ypred);
+title('Confusion Matrix - Test Set');
