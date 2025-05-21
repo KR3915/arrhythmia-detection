@@ -6,4 +6,6 @@ in this project i got the best results with Support vector machine (SVM)
 <p>this program is using <a href="https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic">Diagnostic Wisconsin Breast Cancer Database.</a></p> 
 <h2>Succes Rate</h2>
 i was able to get the model to 95.58 % accuracy
-<img src="confusion matrix.png" alt="confusion matrix" width = "900">
+<p><ls><li>confusion matrix:</li></ls></p>
+<img src="confusion matrix.png" alt="confusion matrix" width = "500">
+
