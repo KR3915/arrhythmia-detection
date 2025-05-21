@@ -5,11 +5,6 @@ opts.VariableNamesLine = 0;
 opts.VariableTypes = [{'string', 'char'}, repmat({'double'}, 1, 30)];
 data = readtable("wdbc.data", opts);
 diagnosis = categorical(data{:,2})
-X = data{:,3:end}
-Y = diagnosis
-cv = cvpartition(Y, 'HoldOut', 0.2);  % 70 % train, 20 % test
-Xtrain = X(training(cv), :);
-Ytrain = Y(training(cv));
-Xtest  = X(test(cv), :);
-Ytest  = Y(test(cv));
-
+x = data{:,3:end}
+y = diagnosis
+doc 
